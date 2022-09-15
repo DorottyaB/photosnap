@@ -7,18 +7,6 @@ nav {
   position: relative;
 }
 
-.logo--icon {
-  width: 16px;
-  margin-right: 5px;
-  fill: rgba(124, 64, 151, 1);
-}
-
-.logo--text {
-  font-weight: 700;
-  font-size: 18px;
-  color: black;
-}
-
 .nav-links-container {
   display: flex;
   gap: 30px;

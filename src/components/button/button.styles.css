@@ -1,0 +1,92 @@
+.button {
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.3s;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button.dark {
+  color: white;
+}
+
+footer .button.dark {
+  align-self: flex-end;
+  font-size: 10px;
+  color: rgb(175, 175, 175);
+}
+
+.button.default:hover,
+.button.default.dark:hover {
+  color: #cd63b6;
+}
+
+.button.default:hover .button--icon,
+.button.default.dark:hover .button--icon,
+.button.default:active .button--icon,
+.button.default.dark:active .button--icon {
+  animation: move 1.5s;
+}
+
+.button--icon {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+@keyframes move {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 15px 0;
+  }
+}
+
+.button.dark.card-button {
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button.dark.card-button .button--icon {
+  font-size: 32px;
+  margin-left: 0;
+}
+
+.button.dark.card-button:hover .button--icon,
+.button.dark.card-button:active .button--icon {
+  animation: translate 2s;
+}
+
+@keyframes translate {
+  0% {
+    translate: -5px 0;
+  }
+  25% {
+    translate: -10px 0;
+  }
+  50% {
+    translate: 10px 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer .button.dark {
+    font-size: 13px;
+  }
+}

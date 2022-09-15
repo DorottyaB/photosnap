@@ -1,0 +1,13 @@
+.features-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+@media screen and (max-width: 750px) {
+  .features-list-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

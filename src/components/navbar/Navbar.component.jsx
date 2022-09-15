@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ReactComponent as Logo } from '../../assets/logo-filled.svg';
+import Logo from '../logo/logo.component';
 import './navbar.styles.css';
 
 export default function Navbar() {
@@ -7,12 +7,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className='logo-container'>
-        <a href='/' className='logo--text'>
-          <Logo className='logo--icon' />
-          PHOTOSNAP
-        </a>
-      </div>
+      <Logo theme='dark' />
       <div
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);

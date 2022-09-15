@@ -48,49 +48,6 @@
   color: rgb(180, 180, 180);
 }
 
-.text-container a:link,
-.text-container a:visited {
-  color: black;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  font-family: 'Open Sans', sans-serif;
-  transition: all 0.3s;
-  font-weight: bold;
-  display: flex;
-  align-items: baseline;
-}
-
-.text-container.dark a:link,
-.text-container.dark a:visited {
-  color: white;
-}
-
-.text-container a:hover,
-.text-container.dark a:hover {
-  color: #cd63b6;
-}
-
-.text-container a:hover .section--icon,
-.text-container.dark a:hover .section--icon {
-  animation: move 1.5s;
-}
-
-.section--icon {
-  font-size: 20px;
-  margin-left: 8px;
-}
-
-@keyframes move {
-  0% {
-    translate: 0 0;
-  }
-
-  50% {
-    translate: 15px 0;
-  }
-}
-
 .image-container {
   min-width: 375px;
   flex: 2 1 0;

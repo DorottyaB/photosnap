@@ -1,3 +1,5 @@
+import Button from '../button/button.component';
+
 import './card.styles.css';
 
 export default function Card(props) {
@@ -9,10 +11,7 @@ export default function Card(props) {
     >
       <h4>{props.title}</h4>
       <p>by {props.author}</p>
-      <button className='card-button'>
-        Read story
-        <span>&rarr;</span>
-      </button>
+      <Button buttonText='Read story' theme='dark' buttonType='card-button' />
     </div>
   );
 }
