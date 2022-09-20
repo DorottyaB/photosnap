@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import Section from '../section/Section.component';
 import CardList from '../card-list/card-list.component';
 import FeaturesList from '../features-list/features-list.component';
@@ -8,6 +10,10 @@ import photo2 from '../../assets/photo-2.jpg';
 import photo3 from '../../assets/photo-3.jpg';
 
 export default function Main() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <main>
       <Section
@@ -36,7 +42,7 @@ export default function Main() {
         image={photo3}
       />
 
-      <CardList />
+      <CardList n='4' type='main' />
       <FeaturesList />
       <Footer />
     </main>

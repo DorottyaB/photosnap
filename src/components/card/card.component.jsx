@@ -6,13 +6,13 @@ export default function Card(props) {
   return (
     <div
       key={props.id}
-      className='card-container'
+      className={`card-container ${props.type}`}
       style={{ backgroundImage: `url(${props.imageUrl})` }}
     >
       <div className='overlay'>
-        <p>{props.date}</p>
+        <p className='card-date'>{props.date}</p>
         <h4>{props.title}</h4>
-        <p className='author'>by {props.author}</p>
+        <p className='card-author'>by {props.author}</p>
         <Button buttonText='Read story' theme='dark' buttonType='card-button' />
       </div>
     </div>

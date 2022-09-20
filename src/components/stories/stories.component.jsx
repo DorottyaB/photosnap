@@ -1,12 +1,14 @@
-import stories from '../../data';
+import { useEffect } from 'react';
 
-import Card from '../card/card.component';
+import FeaturedStory from './featured-story.component';
+import CardList from '../card-list/card-list.component';
 import Footer from '../footer/footer.component';
 
-import '../card-list/card-list.styles.css';
-import FeaturedStory from './featured-story.component';
-
 export default function Stories() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <div>
       <FeaturedStory
@@ -16,17 +18,7 @@ export default function Stories() {
         author='John Appleseed'
         text="The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged."
       />
-      <div className='card-list-container'>
-        {stories.map(story => (
-          <Card
-            key={story.id}
-            title={story.title}
-            author={story.author}
-            date={story.date}
-            imageUrl={story.imageUrl}
-          />
-        ))}
-      </div>
+      <CardList n='17' type='stories' />
       <Footer />
     </div>
   );

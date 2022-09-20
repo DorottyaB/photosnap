@@ -4,7 +4,7 @@
   flex: 1 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
-  gap: 6px;
+  background-position: center;
 }
 
 .overlay {
@@ -15,6 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 6px;
+  transition: all 0.3s;
 }
 
 .card-container:hover .overlay {
@@ -33,7 +35,11 @@
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.author {
+.card-container.main p.card-date {
+  display: none;
+}
+
+.card-author {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   padding-bottom: 15px;
 }
