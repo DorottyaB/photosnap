@@ -20,13 +20,31 @@ export default function Navbar() {
           <span className='bar'></span>
         </div>
         <div className={`nav-links-container ${isNavExpanded ? 'expanded' : ''}`}>
-          <Link to='stories' className='nav-link'>
+          <Link
+            to='stories'
+            className='nav-link'
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
             STORIES
           </Link>
-          <Link to='/' className='nav-link'>
+          <Link
+            to='/'
+            className='nav-link'
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
             FEATURES
           </Link>
-          <Link to='/' className='nav-link'>
+          <Link
+            to='/'
+            className='nav-link'
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
             PRICING
           </Link>
         </div>

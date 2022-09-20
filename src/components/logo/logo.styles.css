@@ -1,12 +1,14 @@
 .logo--icon {
   width: 16px;
   margin-right: 5px;
-  fill: rgba(124, 64, 151, 1);
+  fill: rgb(124, 64, 151);
 }
 
 .logo--text {
   font-weight: 700;
   font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .logo--text.dark {

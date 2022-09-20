@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Logo from '../logo/logo.component';
 import Button from '../button/button.component';
 
@@ -34,18 +36,18 @@ export default function Footer() {
         </div>
       </div>
       <div className='container footer-nav-links'>
-        <a href='/' className='footer-nav-link'>
+        <Link to='/' className='footer-nav-link'>
           HOME
-        </a>
-        <a href='/' className='footer-nav-link'>
+        </Link>
+        <Link to='stories' className='footer-nav-link'>
           STORIES
-        </a>
-        <a href='/' className='footer-nav-link'>
+        </Link>
+        <Link to='/' className='footer-nav-link'>
           FEATURES
-        </a>
-        <a href='/' className='footer-nav-link'>
+        </Link>
+        <Link to='/' className='footer-nav-link'>
           PRICING
-        </a>
+        </Link>
       </div>
       <div className='container'>
         <Button buttonText='Get an invite' theme='dark' buttonType='default' />

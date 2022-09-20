@@ -2,7 +2,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 400px; */
 }
 
 .story-text-container {
@@ -24,7 +23,7 @@
 }
 
 .story-text-container p {
-  color: rgb(167, 167, 167);
+  color: rgb(178, 178, 178);
   font-size: 14px;
   line-height: 22px;
   font-weight: 500;

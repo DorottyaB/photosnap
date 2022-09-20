@@ -1,5 +1,3 @@
-import { Outlet } from 'react-router-dom';
-
 import Section from '../section/Section.component';
 import CardList from '../card-list/card-list.component';
 import FeaturesList from '../features-list/features-list.component';
@@ -8,8 +6,6 @@ import Footer from '../footer/footer.component';
 import photo1 from '../../assets/photo-1.jpg';
 import photo2 from '../../assets/photo-2.jpg';
 import photo3 from '../../assets/photo-3.jpg';
-
-// import data from '../../data';
 
 export default function Main() {
   return (
@@ -43,43 +39,6 @@ export default function Main() {
       <CardList />
       <FeaturesList />
       <Footer />
-      <Outlet />
     </main>
   );
 }
-
-/*
-<div>
-                {data.map(item => {
-                    return (
-                        <Card img={item.coverImg} rating={item.stats.rating} reviewCount={item.stats.reviewCount}
-                    location={item.location} title={item.title} price={item.price} />
-                    )
-                })}
-            </div>
-*/
-
-// or
-
-/*
-const cards = data.map(item => {
-        return (
-            <Card 
-                key={item.id}
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
-            />
-        )
-    })
-
-    return (
-        <div>
-            <Navbar />
-            {cards}
-        </div>
-    )
-*/
