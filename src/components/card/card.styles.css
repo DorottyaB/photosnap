@@ -1,67 +1,41 @@
 .card-container {
   width: 25%;
-  /* height: 400px; */
   height: 60vh;
   flex: 1 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
+  gap: 6px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 6px;
-  padding: 20px 30px;
+}
+
+.card-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .card-container h4 {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .card-container p {
   color: rgba(255, 255, 255, 0.782);
   font-size: 12px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
-  padding-bottom: 15px;
+}
+
+.author {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-.card-button {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-  background: transparent;
-  padding: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.card-button span {
-  font-size: 32px;
-}
-
-.card-button:hover span {
-  animation: translate 2s;
-}
-
-@keyframes translate {
-  0% {
-    translate: -5px 0;
-  }
-  25% {
-    translate: -10px 0;
-  }
-  50% {
-    translate: 10px 0;
-  }
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 750px) {

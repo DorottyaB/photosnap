@@ -11,12 +11,10 @@
 .text-container {
   flex: 1 2 0;
   min-width: 375px;
-}
-
-.text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   padding: 20px 5%;
 }

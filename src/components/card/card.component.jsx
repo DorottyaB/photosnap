@@ -9,9 +9,12 @@ export default function Card(props) {
       className='card-container'
       style={{ backgroundImage: `url(${props.imageUrl})` }}
     >
-      <h4>{props.title}</h4>
-      <p>by {props.author}</p>
-      <Button buttonText='Read story' theme='dark' buttonType='card-button' />
+      <div className='overlay'>
+        <p>{props.date}</p>
+        <h4>{props.title}</h4>
+        <p className='author'>by {props.author}</p>
+        <Button buttonText='Read story' theme='dark' buttonType='card-button' />
+      </div>
     </div>
   );
 }

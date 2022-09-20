@@ -26,6 +26,10 @@ footer {
   justify-content: space-between;
 }
 
+.container:nth-of-type(2) {
+  align-items: flex-start;
+}
+
 .footer-nav-links {
   gap: 16px;
 }
@@ -51,6 +55,18 @@ footer {
 
 @media screen and (max-width: 750px) {
   footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer-nav-link:link,
+  .footer-nav-link:visited {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
     grid-template-columns: 1fr;
     justify-items: center;
     align-content: space-between;
@@ -63,14 +79,13 @@ footer {
     gap: 20px;
   }
 
+  .container:nth-of-type(2) {
+    align-items: center;
+  }
+
   .footer-nav-links {
     align-items: center;
     margin-bottom: 40px;
-  }
-
-  .footer-nav-link:link,
-  .footer-nav-link:visited {
-    font-size: 14px;
   }
 
   footer .button.dark {

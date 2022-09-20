@@ -1,3 +1,5 @@
+import { Outlet } from 'react-router-dom';
+
 import Section from '../section/Section.component';
 import CardList from '../card-list/card-list.component';
 import FeaturesList from '../features-list/features-list.component';
@@ -41,6 +43,7 @@ export default function Main() {
       <CardList />
       <FeaturesList />
       <Footer />
+      <Outlet />
     </main>
   );
 }
