@@ -50,7 +50,13 @@ export default function Footer() {
         </Link>
       </div>
       <Button buttonText='Get an invite' theme='dark' buttonType='default' />
-      <p className='copyright-text'>Copyright 2022. All Rights Reserved.</p>
+      <p className='copyright-text'>
+        Copyright 2022. All Rights Reserved.
+        <br />
+        <span className='author'>
+          Coded by <a href='https://github.com/DorottyaB'>Dorottya Balogh</a>.
+        </span>
+      </p>
     </footer>
   );
 }

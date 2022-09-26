@@ -27,3 +27,7 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [React Router](https://reactrouter.com/en/main)
+
+### Author
+
+- Website - [Dorottya Balogh](https://github.com/DorottyaB)
