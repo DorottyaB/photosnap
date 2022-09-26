@@ -17,23 +17,23 @@ export default function Footer() {
     <footer>
       <div className='container'>
         <Logo theme='light' />
-        <div className='social-links'>
-          <a href='https://facebook.com'>
-            <img src={facebookIcon} alt='Facebook icon' />
-          </a>
-          <a href='https://youtube.com'>
-            <img src={youtubeIcon} alt='Youtube icon' />
-          </a>
-          <a href='https://twitter.com'>
-            <img src={twitterIcon} alt='Twitter icon' />
-          </a>
-          <a href='https://pinterest.com'>
-            <img src={pinterestIcon} alt='Pinterest icon' />
-          </a>
-          <a href='https://instagram.com'>
-            <img src={instagramIcon} alt='Instagram icon' />
-          </a>
-        </div>
+      </div>
+      <div className='container social-links'>
+        <a href='https://facebook.com'>
+          <img src={facebookIcon} alt='Facebook icon' />
+        </a>
+        <a href='https://youtube.com'>
+          <img src={youtubeIcon} alt='Youtube icon' />
+        </a>
+        <a href='https://twitter.com'>
+          <img src={twitterIcon} alt='Twitter icon' />
+        </a>
+        <a href='https://pinterest.com'>
+          <img src={pinterestIcon} alt='Pinterest icon' />
+        </a>
+        <a href='https://instagram.com'>
+          <img src={instagramIcon} alt='Instagram icon' />
+        </a>
       </div>
       <div className='container footer-nav-links'>
         <Link to='/' className='footer-nav-link'>
@@ -49,10 +49,8 @@ export default function Footer() {
           PRICING
         </Link>
       </div>
-      <div className='container'>
-        <Button buttonText='Get an invite' theme='dark' buttonType='default' />
-        <p className='copyright-text'>Copyright 2022. All Rights Reserved.</p>
-      </div>
+      <Button buttonText='Get an invite' theme='dark' buttonType='default' />
+      <p className='copyright-text'>Copyright 2022. All Rights Reserved.</p>
     </footer>
   );
 }

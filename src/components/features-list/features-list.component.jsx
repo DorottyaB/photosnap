@@ -54,6 +54,8 @@ export default function FeaturesList(props) {
   ));
 
   return (
-    <div className='features-list-container'>{props.all === true ? allFeatures : preview}</div>
+    <div className={`features-list-container ${props.all === true ? 'col-2' : ''}`}>
+      {props.all === true ? allFeatures : preview}
+    </div>
   );
 }

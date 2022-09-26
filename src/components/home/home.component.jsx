@@ -23,7 +23,7 @@ export default function Home() {
         buttonType='default'
         image={photo1}
         theme='dark'
-        type=''
+        type='inverted'
       />
 
       <Section
@@ -32,7 +32,7 @@ export default function Home() {
         buttonText='View the stories'
         buttonType='default'
         image={photo2}
-        type='inverted'
+        type=''
       />
 
       <Section
@@ -41,7 +41,7 @@ export default function Home() {
         buttonText='View the stories'
         buttonType='default'
         image={photo3}
-        type=''
+        type='inverted'
       />
 
       <CardList n='4' type='main' />

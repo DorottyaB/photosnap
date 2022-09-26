@@ -1,10 +1,14 @@
 .cta-container {
   display: flex;
+  position: relative;
 }
 
 .cta-border {
-  height: 280px;
-  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 6px;
+  width: 120px;
   background: rgb(255, 197, 147);
   background: linear-gradient(
     45deg,
@@ -15,23 +19,64 @@
 }
 
 .background-image-container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
   min-height: 280px;
   width: 100%;
   background-image: url('../../assets/shared/bg-beta.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 138px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cta-text-container {
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .cta-text {
   color: #fff;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .cta-border {
+    left: 0;
+    height: 280px;
+    width: 6px;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+  }
+
+  .background-image-container {
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .cta-text-container {
+    max-width: 400px;
+  }
+
+  .cta-text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background-image-container {
+    padding: 0 138px;
+  }
 }
