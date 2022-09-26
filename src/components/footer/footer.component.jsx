@@ -4,11 +4,11 @@ import Logo from '../logo/logo.component';
 import Button from '../button/button.component';
 
 // Icons downloaded from https://ionic.io/ionicons
-import facebookIcon from '../../assets/logo-facebook.svg';
-import youtubeIcon from '../../assets/logo-youtube.svg';
-import twitterIcon from '../../assets/logo-twitter.svg';
-import pinterestIcon from '../../assets/logo-pinterest.svg';
-import instagramIcon from '../../assets/logo-instagram.svg';
+import facebookIcon from '../../assets/shared/facebook.svg';
+import youtubeIcon from '../../assets/shared/youtube.svg';
+import twitterIcon from '../../assets/shared/twitter.svg';
+import pinterestIcon from '../../assets/shared/pinterest.svg';
+import instagramIcon from '../../assets/shared/instagram.svg';
 
 import './footer.styles.css';
 
@@ -39,13 +39,13 @@ export default function Footer() {
         <Link to='/' className='footer-nav-link'>
           HOME
         </Link>
-        <Link to='stories' className='footer-nav-link'>
+        <Link to='/stories' className='footer-nav-link'>
           STORIES
         </Link>
-        <Link to='/' className='footer-nav-link'>
+        <Link to='/features' className='footer-nav-link'>
           FEATURES
         </Link>
-        <Link to='/' className='footer-nav-link'>
+        <Link to='/pricing' className='footer-nav-link'>
           PRICING
         </Link>
       </div>

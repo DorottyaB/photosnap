@@ -7,10 +7,10 @@ export default function FeaturedStory(props) {
       <div className='story-text-container'>
         <p className='uppercase'>Last month's featured story</p>
         <h1>{props.title}</h1>
-        <p>
+        <p className='story-details'>
           {props.date} <span>by {props.author}</span>
         </p>
-        <p>{props.text}</p>
+        <p className='story-text'>{props.text}</p>
         <Button buttonText='Read the story' theme='dark' buttonType='default' />
       </div>
     </div>

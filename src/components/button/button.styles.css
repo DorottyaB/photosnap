@@ -3,9 +3,9 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   transition: all 0.3s;
-  font-weight: bold;
+  font-weight: 500;
   display: flex;
   align-items: baseline;
   background: transparent;
@@ -21,13 +21,8 @@
 
 footer .button.dark {
   align-self: flex-end;
-  font-size: 10px;
+  font-size: 13px;
   color: rgb(175, 175, 175);
-}
-
-.button.default:hover,
-.button.default.dark:hover {
-  color: #cd63b6;
 }
 
 .button.default:hover .button--icon,
@@ -53,7 +48,7 @@ footer .button.dark {
 }
 
 .button.dark.card-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   justify-content: space-between;
   align-items: center;
   font-size: 10px;
@@ -82,11 +77,5 @@ footer .button.dark {
   }
   50% {
     translate: 10px 0;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  footer .button.dark {
-    font-size: 13px;
   }
 }

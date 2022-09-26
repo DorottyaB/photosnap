@@ -1,0 +1,37 @@
+.cta-container {
+  display: flex;
+}
+
+.cta-border {
+  height: 280px;
+  width: 6px;
+  background: rgb(255, 197, 147);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 197, 147, 1) 0%,
+    rgba(188, 113, 152, 1) 50%,
+    rgba(90, 119, 255, 1) 100%
+  );
+}
+
+.background-image-container {
+  min-height: 280px;
+  width: 100%;
+  background-image: url('../../assets/shared/bg-beta.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 138px;
+}
+
+.cta-text-container {
+  max-width: 400px;
+}
+
+.cta-text {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

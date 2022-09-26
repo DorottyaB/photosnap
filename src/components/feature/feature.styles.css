@@ -1,0 +1,25 @@
+.feature-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 80px auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.feature-icon {
+  width: 60px;
+  height: auto;
+}
+
+.feature-title {
+  font-size: 18px;
+  align-self: end;
+  margin-bottom: 18px;
+}
+
+.feature-text {
+  font-size: 15px;
+  color: rgb(123, 123, 123);
+  font-weight: 500;
+}

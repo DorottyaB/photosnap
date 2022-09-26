@@ -1,11 +1,29 @@
-import './features.styles.css';
+import { useEffect } from 'react';
 
-export default function Features(props) {
+import Footer from '../footer/footer.component';
+import Section from '../section/section.component';
+
+import hero from '../../assets/features/hero.jpg';
+import FeaturesList from '../features-list/features-list.component';
+import CallToAction from '../call-to-action/call-to-action.component';
+
+export default function Features() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
-    <div className='features-container'>
-      <img className='features-icon' src={props.image} alt={props.alt} />
-      <h3 className='features-title'>{props.title}</h3>
-      <p className='features-text'>{props.text}</p>
-    </div>
+    <main>
+      <Section
+        type='features'
+        theme='dark'
+        title='Features'
+        text='We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.'
+        image={hero}
+      />
+      <FeaturesList all={true} />
+      <CallToAction />
+      <Footer />
+    </main>
   );
 }

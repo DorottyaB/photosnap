@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
 
-import Section from '../section/Section.component';
+import Section from '../section/section.component';
 import CardList from '../card-list/card-list.component';
 import FeaturesList from '../features-list/features-list.component';
 import Footer from '../footer/footer.component';
 
-import photo1 from '../../assets/photo-1.jpg';
-import photo2 from '../../assets/photo-2.jpg';
-import photo3 from '../../assets/photo-3.jpg';
+import photo1 from '../../assets/home/create-and-share.jpg';
+import photo2 from '../../assets/home/beautiful-stories.jpg';
+import photo3 from '../../assets/home/designed-for-everyone.jpg';
 
-export default function Main() {
+export default function Home() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
   }, []);
@@ -23,6 +23,7 @@ export default function Main() {
         buttonType='default'
         image={photo1}
         theme='dark'
+        type=''
       />
 
       <Section
@@ -40,6 +41,7 @@ export default function Main() {
         buttonText='View the stories'
         buttonType='default'
         image={photo3}
+        type=''
       />
 
       <CardList n='4' type='main' />

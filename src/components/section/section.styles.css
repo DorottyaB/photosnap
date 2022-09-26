@@ -1,7 +1,11 @@
 .section-container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 500px;
+  min-height: 580px;
+}
+
+.section-container.features {
+  min-height: 490px;
 }
 
 .section-container.inverted .text-container {
@@ -16,7 +20,8 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  padding: 20px 5%;
+  padding: 20px 7%;
+  position: relative;
 }
 
 .text-container.dark {
@@ -25,10 +30,14 @@
 
 .text-container h2 {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
   letter-spacing: 1.5px;
   max-width: 375px;
+}
+
+.section-container:nth-of-type(2) .text-container h2 {
+  max-width: 243px;
 }
 
 .text-container.dark h2 {
@@ -37,9 +46,9 @@
 
 .text-container p {
   color: rgb(123, 123, 123);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
-  max-width: 340px;
+  max-width: 380px;
 }
 
 .text-container.dark p {
@@ -57,12 +66,48 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 750px) {
+.section-container:first-of-type .section-border {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  height: 200px;
+  width: 6px;
+  background: rgb(255, 197, 147);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 197, 147, 1) 0%,
+    rgba(188, 113, 152, 1) 50%,
+    rgba(90, 119, 255, 1) 100%
+  );
+}
+
+@media screen and (max-width: 800px) {
+  .text-container {
+    flex: 2 1 0;
+    min-width: auto;
+  }
+  .image-container {
+    flex: 1 2 0;
+    min-width: 272px;
+  }
+
+  .section-container.inverted .image-container img {
+    object-position: 30%;
+  }
+}
+
+@media screen and (max-width: 665px) {
   .image-container {
     order: 1;
   }
 
   .text-container {
     order: 2;
+    min-width: 100%;
+  }
+
+  .text-container h2 {
+    font-size: 32px;
   }
 }

@@ -30,7 +30,7 @@ export default function Navbar() {
             STORIES
           </Link>
           <Link
-            to='/'
+            to='features'
             className='nav-link'
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
@@ -39,7 +39,7 @@ export default function Navbar() {
             FEATURES
           </Link>
           <Link
-            to='/'
+            to='pricing'
             className='nav-link'
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);

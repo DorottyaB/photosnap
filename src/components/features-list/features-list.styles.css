@@ -1,13 +1,23 @@
 .features-list-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  padding: 80px 10%;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 100px;
+  padding: 100px 10%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .features-list-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 70px;
+    padding: 115px 22%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features-list-container {
+    padding: 96px 10%;
   }
 }
