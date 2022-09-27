@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DorottyaB/photosnap)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dorottyab.github.io/photosnap/](https://dorottyab.github.io/photosnap/)
 
 ### Built with
 
