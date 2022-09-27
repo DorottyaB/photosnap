@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DorottyaB/photosnap)
-- Live Site URL: [https://dorottyab.github.io/photosnap/](https://dorottyab.github.io/photosnap/)
+- Live Site URL: [Netlify](https://curious-sfogliatella-cf3d3f.netlify.app/)
 
 ### Built with
 
@@ -25,8 +25,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [React Router](https://reactrouter.com/en/main)
+- React - JS library
+- React Router
 
 ### Author
 
