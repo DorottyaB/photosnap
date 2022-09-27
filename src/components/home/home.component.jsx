@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
-import Section from '../section/section.component';
-import CardList from '../card-list/card-list.component';
-import FeaturesList from '../features-list/features-list.component';
-import Footer from '../footer/footer.component';
+import Section from './section/section.component';
+import CardList from '../stories/story-card-list/story-card-list.component';
+import FeaturesList from '../features/features-list/features-list.component';
+import Footer from '../shared/footer/footer.component';
 
 import photo1 from '../../assets/home/create-and-share.jpg';
 import photo2 from '../../assets/home/beautiful-stories.jpg';

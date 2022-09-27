@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import Logo from '../logo/logo.component';
 import Button from '../button/button.component';
 
-// Icons downloaded from https://ionic.io/ionicons
-import facebookIcon from '../../assets/shared/facebook.svg';
-import youtubeIcon from '../../assets/shared/youtube.svg';
-import twitterIcon from '../../assets/shared/twitter.svg';
-import pinterestIcon from '../../assets/shared/pinterest.svg';
-import instagramIcon from '../../assets/shared/instagram.svg';
+import facebookIcon from '../../../assets/shared/facebook.svg';
+import youtubeIcon from '../../../assets/shared/youtube.svg';
+import twitterIcon from '../../../assets/shared/twitter.svg';
+import pinterestIcon from '../../../assets/shared/pinterest.svg';
+import instagramIcon from '../../../assets/shared/instagram.svg';
 
 import './footer.styles.css';
 

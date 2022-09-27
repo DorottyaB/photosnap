@@ -1,11 +1,11 @@
 import Feature from '../feature/feature.component';
 
-import icon1 from '../../assets/features/responsive.svg';
-import icon2 from '../../assets/features/no-limit.svg';
-import icon3 from '../../assets/features/embed.svg';
-import icon4 from '../../assets/features/custom-domain.svg';
-import icon5 from '../../assets/features/boost-exposure.svg';
-import icon6 from '../../assets/features/drag-drop.svg';
+import icon1 from '../../../assets/features/responsive.svg';
+import icon2 from '../../../assets/features/no-limit.svg';
+import icon3 from '../../../assets/features/embed.svg';
+import icon4 from '../../../assets/features/custom-domain.svg';
+import icon5 from '../../../assets/features/boost-exposure.svg';
+import icon6 from '../../../assets/features/drag-drop.svg';
 
 import './features-list.styles.css';
 

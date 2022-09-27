@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 
-import Footer from '../footer/footer.component';
-import Section from '../section/section.component';
+import Footer from '../shared/footer/footer.component';
+import Section from '../home/section/section.component';
 
 import hero from '../../assets/features/hero.jpg';
-import FeaturesList from '../features-list/features-list.component';
-import CallToAction from '../call-to-action/call-to-action.component';
+import FeaturesList from './features-list/features-list.component';
+import CallToAction from '../shared/call-to-action/call-to-action.component';
 
 export default function Features() {
   useEffect(() => {

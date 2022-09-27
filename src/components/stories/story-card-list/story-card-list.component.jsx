@@ -1,14 +1,14 @@
-import Card from '../card/card.component';
+import StoryCard from '../story-card/story-card.component';
 
-import stories from '../../data';
+import stories from '../../../data';
 
-import './card-list.styles.css';
+import './story-card-list.styles.css';
 
-export default function CardList(props) {
+export default function StoryCardList(props) {
   return (
     <div className='card-list-container'>
       {stories.slice(0, props.n).map(item => (
-        <Card
+        <StoryCard
           type={props.type}
           key={item.id}
           date={item.date}

@@ -1,8 +1,8 @@
-import Button from '../button/button.component';
+import Button from '../../shared/button/button.component';
 
-import './card.styles.css';
+import './story-card.styles.css';
 
-export default function Card(props) {
+export default function StoryCard(props) {
   return (
     <div
       key={props.id}

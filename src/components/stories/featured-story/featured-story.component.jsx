@@ -1,4 +1,4 @@
-import Button from '../button/button.component';
+import Button from '../../shared/button/button.component';
 import './featured-story.style.css';
 
 export default function FeaturedStory(props) {
