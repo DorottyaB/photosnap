@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/DorottyaB/photosnap/static/css/main.728767ee.css",
+    "main.js": "/DorottyaB/photosnap/static/js/main.bf9519f9.js",
+    "static/media/beautiful-stories.jpg": "/DorottyaB/photosnap/static/media/beautiful-stories.c53d42bed55e892d6a5e.jpg",
+    "static/media/moon-of-appalacia.jpg": "/DorottyaB/photosnap/static/media/moon-of-appalacia.0d34b444cd70b0e84b91.jpg",
+    "static/media/create-and-share.jpg": "/DorottyaB/photosnap/static/media/create-and-share.c29005174086ae245269.jpg",
+    "static/media/designed-for-everyone.jpg": "/DorottyaB/photosnap/static/media/designed-for-everyone.70f5fa4ce85f33d59a05.jpg",
+    "static/media/hero.jpg": "/DorottyaB/photosnap/static/media/hero.9d811536bd9a6ea3985f.jpg",
+    "static/media/bg-beta.jpg": "/DorottyaB/photosnap/static/media/bg-beta.31d5fc317a698d93b5ac.jpg",
+    "static/media/logo.svg": "/DorottyaB/photosnap/static/media/logo.a44763db2338dbc834bf6d743a1f813f.svg",
+    "static/media/embed.svg": "/DorottyaB/photosnap/static/media/embed.78c81ce39eed44ef9f71cec054aa5c06.svg",
+    "static/media/custom-domain.svg": "/DorottyaB/photosnap/static/media/custom-domain.40b46c119cfb2d972911002a15937492.svg",
+    "static/media/boost-exposure.svg": "/DorottyaB/photosnap/static/media/boost-exposure.1e05bf1c651d0e434eee243e29491dc8.svg",
+    "static/media/no-limit.svg": "/DorottyaB/photosnap/static/media/no-limit.b8deb4d29340cc57f1a1b86bd7a08cc9.svg",
+    "static/media/drag-drop.svg": "/DorottyaB/photosnap/static/media/drag-drop.7716476bbc47ecc4ede7cf96a2e1d240.svg",
+    "static/media/responsive.svg": "/DorottyaB/photosnap/static/media/responsive.d5fd70c1af8c4b7303ade262961b1309.svg",
+    "static/media/instagram.svg": "/DorottyaB/photosnap/static/media/instagram.21480e89adbd97fd0773e3a2e8a3cbd3.svg",
+    "static/media/pinterest.svg": "/DorottyaB/photosnap/static/media/pinterest.af9d6c061eb90729b0d957baea99e9c0.svg",
+    "index.html": "/DorottyaB/photosnap/index.html",
+    "static/media/twitter.svg": "/DorottyaB/photosnap/static/media/twitter.8c975ccebaf771670b43d18c708376e4.svg",
+    "static/media/youtube.svg": "/DorottyaB/photosnap/static/media/youtube.d210bb87c07e3a7304b27a95c809a8e6.svg",
+    "static/media/facebook.svg": "/DorottyaB/photosnap/static/media/facebook.9a5fee2017d029404610bae7a23b8473.svg",
+    "static/media/check.svg": "/DorottyaB/photosnap/static/media/check.46b060c0a6f9d5931055e452d1363f6c.svg",
+    "main.728767ee.css.map": "/DorottyaB/photosnap/static/css/main.728767ee.css.map",
+    "main.bf9519f9.js.map": "/DorottyaB/photosnap/static/js/main.bf9519f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.728767ee.css",
+    "static/js/main.bf9519f9.js"
+  ]
+}
