@@ -1,5 +1,5 @@
 .card-container {
-  height: 400px;
+  height: 375px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,13 +43,13 @@
 @media screen and (min-width: 600px) {
   .card-container {
     width: 50%;
+    height: 500px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .card-container {
     width: 25%;
-    height: 500px;
   }
 
   .card-container:hover .overlay {

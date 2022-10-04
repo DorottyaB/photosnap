@@ -18,6 +18,7 @@ footer {
 .container.social-links {
   flex-direction: row;
   gap: 12px;
+  user-select: none;
 }
 
 .social-links img {
@@ -121,7 +122,7 @@ footer .button.dark {
 
   .footer-nav-link:hover,
   .copyright-text .author a:hover {
-    filter: brightness(60%);
+    filter: brightness(85%);
   }
 
   footer .button.dark {

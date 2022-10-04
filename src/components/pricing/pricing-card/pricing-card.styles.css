@@ -79,10 +79,16 @@
   text-transform: uppercase;
   padding: 12px;
   text-align: center;
+  transition: all 0.3s;
 }
 
 input[type='radio'] {
   display: none;
+}
+
+.pricing-button:active,
+.pricing-card-container.pro .pricing-button:active {
+  transform: scale(0.95);
 }
 
 @media screen and (min-width: 700px) {
@@ -132,17 +138,11 @@ input[type='radio'] {
 
   .pricing-button {
     cursor: pointer;
-    transition: all 0.3s;
   }
 
   .pricing-button:hover,
   .pricing-card-container.pro .pricing-button:hover {
     color: #000;
     background-color: #b7b7b7;
-  }
-
-  .pricing-button:active,
-  .pricing-card-container.pro .pricing-button:active {
-    transform: scale(0.95);
   }
 }
