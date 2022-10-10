@@ -12,10 +12,7 @@ export default function PricingCard(props) {
         <h3 className='price'>${props.price}</h3>
         <p className='time-period'>per {props.timePeriod}</p>
       </div>
-      <label className='pricing-button'>
-        <input type='radio' name='plan' />
-        Pick plan
-      </label>
+      <button className='pricing-button'>Pick plan</button>
     </div>
   );
 }

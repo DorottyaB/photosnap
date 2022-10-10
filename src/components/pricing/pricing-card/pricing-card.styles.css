@@ -70,9 +70,12 @@
 }
 
 .pricing-button {
+  font-family: 'DM Sans', sans-serif;
   width: 100%;
   background-color: #000;
   color: #fff;
+  border: none;
+  outline-color: rgba(188, 113, 152, 1);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 2px;
