@@ -13,7 +13,12 @@ export default function Section(props) {
         <h2>{props.title}</h2>
         <p>{props.text}</p>
         {props.buttonText && (
-          <Button buttonText={props.buttonText} theme={props.theme} buttonType='default' />
+          <Button
+            url={props.url}
+            buttonText={props.buttonText}
+            theme={props.theme}
+            buttonType='default'
+          />
         )}
       </div>
     </section>

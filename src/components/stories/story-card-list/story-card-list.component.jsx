@@ -15,6 +15,7 @@ export default function StoryCardList(props) {
           title={item.title}
           author={item.author}
           imageUrl={item.imageUrl}
+          url={item.url}
         />
       ))}
     </div>
