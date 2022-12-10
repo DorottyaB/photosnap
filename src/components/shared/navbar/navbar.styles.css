@@ -94,7 +94,7 @@ nav {
     position: absolute;
     top: 230px;
     left: 50%;
-    translate: -50% 0;
+    transform: translate(-50%, 0);
     font-size: 12px;
     padding: 15px;
     width: 70%;
