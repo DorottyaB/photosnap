@@ -3,7 +3,7 @@ import './featured-story.style.css';
 
 export default function FeaturedStory(props) {
   return (
-    <div className='story-image-container' style={{ backgroundImage: `url(${props.imageUrl})` }}>
+    <div className='story-image-container' style={{ backgroundImage: `url(${props.image})` }}>
       <div className='story-text-container'>
         <p className='uppercase'>Last month's featured story</p>
         <h1>{props.title}</h1>

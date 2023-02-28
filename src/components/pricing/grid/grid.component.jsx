@@ -1,4 +1,5 @@
 import GridSection from '../grid-section/grid-section.component';
+import { compare } from '../../../constants';
 
 import './grid.styles.css';
 
@@ -12,14 +13,15 @@ export default function Grid() {
         <h4 className='grid-title hidden'>Pro</h4>
         <h4 className='grid-title hidden'>Business</h4>
         <div className='screen-medium'>
-          <GridSection title='UNLIMITED STORY POSTING' basic={true} pro={true} business={true} />
-          <GridSection title='UNLIMITED PHOTO UPLOAD' basic={true} pro={true} business={true} />
-          <GridSection title='EMBEDDING CUSTOM CONTENT' basic={false} pro={true} business={true} />
-          <GridSection title='CUSTOMIZE METADATA' basic={false} pro={true} business={true} />
-          <GridSection title='ADVANCED METRICS' basic={false} pro={false} business={true} />
-          <GridSection title='PHOTO DOWNLOADS' basic={false} pro={false} business={true} />
-          <GridSection title='SEARCH ENGINE INDEXING' basic={false} pro={false} business={true} />
-          <GridSection title='CUSTOM ANALYTICS' basic={false} pro={false} business={true} />
+          {compare.map(item => (
+            <GridSection
+              key={item.id}
+              title={item.title}
+              basic={item.basic}
+              pro={item.pro}
+              business={item.business}
+            />
+          ))}
         </div>
       </div>
     </div>

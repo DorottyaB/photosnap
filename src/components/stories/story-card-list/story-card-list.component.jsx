@@ -1,7 +1,5 @@
 import StoryCard from '../story-card/story-card.component';
-
-import stories from '../../../data';
-
+import { stories } from '../../../constants';
 import './story-card-list.styles.css';
 
 export default function StoryCardList(props) {

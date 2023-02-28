@@ -1,7 +1,6 @@
 import { useState } from 'react';
-
 import PricingCard from '../pricing-card/pricing-card.component';
-
+import { pricing } from '../../../constants';
 import './pricing-card-list.styles.css';
 
 export default function PricingCardList() {
@@ -23,24 +22,15 @@ export default function PricingCardList() {
         <span className={`${isChecked ? 'active' : ''}`}>Yearly</span>
       </div>
       <div className='pricing-cards-container'>
-        <PricingCard
-          planType='basic'
-          text='Includes basic usage of our platform. Recommended for new and aspiring photographers.'
-          price={isChecked ? '190.00' : '19.00'}
-          timePeriod={isChecked ? 'year' : 'month'}
-        />
-        <PricingCard
-          planType='pro'
-          text='More advanced features available. Recommended for photography veterans and professionals.'
-          price={isChecked ? '390.00' : '39.00'}
-          timePeriod={isChecked ? 'year' : 'month'}
-        />
-        <PricingCard
-          planType='business'
-          text='Additional features available such as more detailed metrics. Recommended for business owners.'
-          price={isChecked ? '999.00' : '99.00'}
-          timePeriod={isChecked ? 'year' : 'month'}
-        />
+        {pricing.map(item => (
+          <PricingCard
+            key={item.id}
+            plan={item.plan}
+            text={item.text}
+            price={isChecked ? item.price.yearly : item.price.monthly}
+            timePeriod={isChecked ? 'year' : 'month'}
+          />
+        ))}
       </div>
     </div>
   );

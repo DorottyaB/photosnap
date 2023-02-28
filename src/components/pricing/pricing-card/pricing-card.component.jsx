@@ -2,10 +2,10 @@ import './pricing-card.styles.css';
 
 export default function PricingCard(props) {
   return (
-    <div className={`pricing-card-container ${props.planType}`}>
+    <div className={`pricing-card-container ${props.plan}`}>
       <div className='pricing-card-border'></div>
       <div>
-        <h4 className='pricing-plan-title'>{props.planType}</h4>
+        <h4 className='pricing-plan-title'>{props.plan}</h4>
         <p className='pricing-plan-text'>{props.text}</p>
       </div>
       <div>

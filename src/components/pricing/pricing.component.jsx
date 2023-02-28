@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import Section from '../home/section/section.component';
-
-import hero from '../../assets/pricing/hero.jpg';
 import PricingCardList from './pricing-card-list/pricing-card-list.component';
 import Grid from './grid/grid.component';
 import CallToAction from '../shared/call-to-action/call-to-action.component';
 import Footer from '../shared/footer/footer.component';
+import { pricingSection } from '../../constants';
 
 export default function Pricing() {
   useEffect(() => {
@@ -15,11 +14,11 @@ export default function Pricing() {
   return (
     <main>
       <Section
-        image={hero}
-        title='Pricing'
-        theme='dark'
-        type='features'
-        text="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It's the simple way to create and share your photos."
+        image={pricingSection.image}
+        title={pricingSection.title}
+        theme={pricingSection.theme}
+        type={pricingSection.type}
+        text={pricingSection.text}
       />
       <PricingCardList />
       <Grid />
