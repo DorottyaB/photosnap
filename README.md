@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DorottyaB/photosnap)
-- Live Site URL: [Netlify](https://curious-sfogliatella-cf3d3f.netlify.app/)
+- Live Site URL: [Netlify](https://photosnap-dorottyab.netlify.app/)
 
 ### Built with
 
