@@ -1,0 +1,58 @@
+th:not(.table-header) {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  padding-bottom: 16px;
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+tbody tr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+td {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  display: grid;
+  row-gap: 8px;
+}
+
+td img {
+  width: 16px;
+  height: auto;
+}
+
+td::before {
+  content: attr(datacell);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+  tbody tr {
+    grid-template-columns: 300px repeat(3, 1fr);
+    padding: 24px 0;
+    margin-bottom: 0;
+  }
+
+  th:not(.table-header) {
+    grid-area: auto;
+    padding-bottom: 0;
+    padding-left: 24px;
+  }
+
+  td::before {
+    content: '';
+    display: none;
+  }
+}

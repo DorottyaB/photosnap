@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Section from '../home/section/section.component';
 import PricingCardList from './pricing-card-list/pricing-card-list.component';
-import Grid from './grid/grid.component';
+import Table from './table/table.component';
 import CallToAction from '../shared/call-to-action/call-to-action.component';
 import Footer from '../shared/footer/footer.component';
 import { pricingSection } from '../../constants';
@@ -21,7 +21,7 @@ export default function Pricing() {
         text={pricingSection.text}
       />
       <PricingCardList />
-      <Grid />
+      <Table />
       <CallToAction />
       <Footer />
     </main>
