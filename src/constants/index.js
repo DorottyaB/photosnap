@@ -281,7 +281,7 @@ export const pricing = [
   {
     id: 'pricing-3',
     plan: 'business',
-    text: 'Additional features available such as more detailed metrics. Recommended for business owners.Additional features available such as more detailed metrics. Recommended for business owners.',
+    text: 'Additional features available such as more detailed metrics. Recommended for business owners.',
     price: {
       yearly: '999.00',
       monthly: '99.00',
